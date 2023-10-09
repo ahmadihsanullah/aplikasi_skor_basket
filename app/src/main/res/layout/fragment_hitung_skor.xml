@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HitungSkor">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/container_skor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/timA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tim A"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:id="@+id/timATextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/poinATextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="0" />
+            <Button
+                android:id="@+id/tambahTigaPoinAButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3 Point"
+                android:backgroundTint="#FF9800"
+                android:layout_marginBottom="20dp"
+                />
+
+            <Button
+                android:id="@+id/tambahDuaPoinAButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FF9800"
+                android:text="+3 Point" />
+
+            <Button
+                android:id="@+id/freeThrowsAButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free Throws"
+                android:backgroundTint="#FF9800"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timB"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tim A"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:id="@+id/timBTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----------"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/poinA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="0" />
+            <Button
+                android:id="@+id/tambahTigaPoinBButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3 Point"
+                android:backgroundTint="#FF9800"
+                android:layout_marginBottom="20dp"
+                />
+
+            <Button
+                android:id="@+id/tambahDuaPoinBButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FF9800"
+                android:text="+3 Point" />
+
+            <Button
+                android:id="@+id/freeThrowsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free Throws"
+                android:backgroundTint="#FF9800"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:text="finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_skor"
+        android:backgroundTint="#FF9800"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>
